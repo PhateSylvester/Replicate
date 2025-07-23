@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination</title>
+</head>
+<style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 5px auto;
+}
+.header {
+    background-color: #e3e3e3;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.toggle {
+    display: none;
+}
+.header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 10px;
+    gap: 40px;
+}
+.header a:hover {
+    border-bottom: 2px solid blue;
+}
+@media (max-width: 768px) {
+    .toggle {
+        display: block;
+        /* position: relative;
+        left: 100%; */
+    }
+.header ul {
+    display: none;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+}
+.footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), 
+    url('media/footer.jpg') center/cover;
+    margin: 100px 1px 1px;
+    padding: 100px;
+}
+.foot {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 20px;
+    margin: 50px;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 100%;
+}
+.foot h2 {
+    font-family:'Segoe UI', 
+    Tahoma, Geneva, Verdana, 
+    sans-serif;
+}
+.bor {
+    border-bottom: 2px solid blue;
+    width: 60px;
+    position: relative;
+    bottom: 17px;
+}
+.cntimg {
+    position: relative;
+    top: 3px;
+}
+.cntlnk a {
+    text-decoration: none;
+    color: white;
+}
+.sslink a {
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px;
+    position: relative;
+    bottom: 20px;
+}
+.sslink {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+    left:50px;
+    top: 90px;
+    font-size: 1px;
+}
+.sslink a:hover {
+    padding: 12px;
+    transform: translateY(-5px);
+    background-color: cyan;
+}
+hr {
+    margin: 80px;
+    position: relative;
+    bottom: -20px;
+
+}
+.footright {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    bottom: 50px;
+}
+.destination {
+    background-color: #e3e3e3;
+    display: flex;
+    flex-direction: column;
+}
+.desth2 {
+    font-size: 35px;
+    font-family: monospace;
+    margin-bottom: 30px;
+}
+.destcard {
+    display: flex;
+    flex-direction: column;
+    /* margin: 70px; */
+    padding: 70px;
+}
+.card-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    gap: 30px;
+    width: 100%;
+}
+.card:hover {
+    transform: translateY(-10px)
+}
+.card { 
+    color: black;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    gap: 20px;
+}
+.card p {
+    font-size: 15px;
+    font-weight: 100;
+}
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card a {
+    padding: 15px;
+    font-size: 15px;
+    position: relative;
+    bottom: 5px;
+}
+.filter {
+    text-align: center;
+    padding: 50px;
+}
+.fill {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.filter h1 {
+    color: rgb(12, 120, 202);
+    font-size: 50px;
+    font-family: Cambria, Cochin, 
+    Georgia, Times, 
+    'Times New Roman', serif;
+}
+select {
+    border: none;
+    padding: 10px 20px;
+    border-bottom: 1px solid;
+    font-size: 15px;
+    width: 100%;
+}
+select:hover {
+    padding: 11px 22px;
+    background-color: #e3e3e3;
+    border-radius: 5px;
+    cursor: pointer;
+}
+</style>
+<body>
+    <!-- this section carries the header -->
+    <header class="header">
+        <h1>
+            Vidafa's Concept
+        </h1>
+        <ul>
+            <li><a href="home.html"><img src="media/iconhome.png" alt="home" height="20vh"></a></li>
+            <li><a href="destination.html"><img src="media/iconlocation.png" alt="destinations" height="20vh"></a></li>
+            <li><a href="booking.html"><img src="media/icon247.png" alt="bookings" height="20vh"></a></li>
+            <li><a href="about.html"><img src="media/iconcontact.png" alt="about" height="20vh"></a></li>
+        </ul>
+        <div class="toggle">
+            <img src="media/shrink.jpg">
+        </div>
+    </header>
+    <!-- filter to your destination -->
+    <section class="filter">
+        <h1>
+            Explore Our Destinations 
+        </h1> <br> <br>
+        <div class="fill">
+            <div class="select">
+                <select name="region">
+                    <option value="">Filter by Region</option> <br>
+                    <option value="asia">Asia</option>
+                    <option value="europe">Europe</option>
+                    <option value="north america">North America</option>
+                </select>
+            </div>
+            <div class="select">
+                <select name="prices">
+                    <option value="">Sort by Price</option>
+                    <option value="low to high">Low to High</option>
+                    <option value="high to low">High to Low</option>
+                </select>
+            </div>
+        </div>
+    </section>
+    <!-- this section holds the destinations -->
+    <section class="destination">
+        <div class="destcard">
+            <div>
+                <h2 class="desth2">
+                    Popular Destinations 
+                </h2>
+            </div>
+            <div class="card-div">
+                <div class="card">
+                    <img src="media/paris.jpg" height="280vh">
+                    <h2>
+                        Moscow, Russia
+                    <h2> <br>
+                    <p>
+                        from $999
+                    </p>
+                    <a href="">View Details</a>
+                </div>
+                <div class="card">
+                    <img src="media/paris.jpg" height="280vh">
+                    <h2>
+                        Abuja, Nigeria
+                    <h2> <br>
+                    <p>
+                        from $1299
+                    </p>
+                    <a href="">View Details</a>
+                </div>
+                <div class="card">
+                    <img src="media/paris.jpg" height="280vh">
+                    <h2>
+                        Buenos Aires, Argentina
+                    <h2> <br>
+                    <p>
+                        from $899
+                    </p>
+                    <a href="">View Details</a> 
+                </div>
+                <div class="card">
+                    <img src="media/paris.jpg" height="280vh">
+                    <h2>
+                        Bogota, Colombia
+                    <h2> <br>
+                    <p>
+                        from $999
+                    </p>
+                    <a href="">View Details</a>
+                </div>
+                <div class="card">
+                    <img src="media/paris.jpg" height="280vh">
+                    <h2>
+                        Santiago, Chile
+                    <h2> <br>
+                    <p>
+                        from $1299
+                    </p>
+                    <a href="">View Details</a>
+                </div>
+                <div class="card">
+                    <img src="media/paris.jpg" height="280vh">
+                    <h2>
+                        Lima, Peru
+                    <h2> <br>
+                    <p>
+                        from $899
+                    </p>
+                    <a href="">View Details</a> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- this is the footers -->
+    <footer class="footer">
+        <section class="foot">
+            <div>
+                <h2>
+                    Vidafa
+                </h2> <br>
+                <div class="bor"></div> <br> <br>
+                <p>
+                    Making travel dreams come true since 2010.
+                </p>  <br>
+            </div> <br>
+            <div class="cntlnk">
+                <h2>
+                    Quick Links
+                </h2> <br>
+                <div class="bor"></div> <br> <br>
+                <li><a href="home.html">Home</a></li> <br>
+                <li><a href="destination.html">Destinations</a></li> <br>
+                <li><a href="booking.html">Book Now</a></li> <br>
+            </div> <br>
+            <div>
+                <h2>
+                    Contact Us
+                </h2> <br>
+                <div class="bor"></div> <br> <br>
+                <img src="media/call.png" height="20vh"> +1 (555) 123-4567 <br> <br>
+                <img class="cntimg" src="media/Icon-Mail.png" height="20vh"> contact@vidafaconcept.com
+            </div> <br>
+        </section>
+        <div class="sslink">
+            <a href="http://x.com/vidafaconcept"><img src="media/Frame-twittter.png" alt="x"></a>
+            <a href="http://lnkedin.com/vidafa"><img src="media/Icon - Linkedin.png" alt="linkedin"></a>
+            <a href="http://github.com/phateylvester"><img src="media/Icon -GitHub.png" alt="github"></a>
+        </div>
+        <hr>
+        <p class="footright">
+            &copy; 2026 Vidafa's Concept. All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>
