@@ -4,155 +4,166 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vidafa</title>
+    <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
     <!-- this section carries the header -->
-    <header>
+    <header class="header">
         <h1>
             Vidafa's Concept
         </h1>
         <ul>
-            <li><a href="#home"><img src="media/iconhome.png" alt="home" height="30vh"></a></li>
-            <li><a href="#destination"><img src="media/iconlocation.png" alt="destinations" height="30vh"></a></li>
-            <li><a href="booking"><img src="media/icon247.png" alt="bookings" height="30vh"></a></li>
-            <li><a href="#about"><img src="media/iconcontact.png" alt="about" height="30vh"></a></li>
+            <li><a href="#homepage"><img src="media/iconhome.png" alt="home" height="20vh"></a></li>
+            <li><a href="#destination"><img src="media/iconlocation.png" alt="destinations" height="20vh"></a></li>
+            <li><a href="#booking"><img src="media/icon247.png" alt="bookings" height="20vh"></a></li>
+            <li><a href="#about"><img src="media/iconcontact.png" alt="about" height="20vh"></a></li>
         </ul>
+        <div class="toggle">
+            <img src="media/shrink.jpg">
+        </div>
     </header>
     <!-- this is the hero section -->
-    <section>
-        <h1>
-            Explore Vidafa's Concet
-        </h1>
-        <p>
-            Discover amazing destinations with our exclusive packages
-        </p>
-        <button type="button">Book Now</button>
+    <section class="hero">
+        <div class="heroprop">
+            <h1>
+                Explore Vidafa's Concert
+            </h1>
+            <p>
+                Discover amazing destinations with our exclusive packages
+            </p>
+            <button type="button">Book Now</button>
+        </div>
     </section>
     <!-- this section holds the destinations -->
-    <section>
-        <h2>
-            Popular Destinations 
-        </h2>
-        <section>
+    <section class="destination">
+        <div class="destcard">
             <div>
-                <img src="media/vidafa3.jpg" height="200vh">
-                <h3>
-                    Paris, France
-                <h3>
-                <p>
-                    from $999
-                </p>
-                <a href="">View Details</a>
+                <h2 class="desth2">
+                    Popular Destinations 
+                </h2>
             </div>
-            <div>
-                <img src="media/vidafa3.jpg" height="200vh">
-                <h3>
-                    Paris, France
-                <h3>
-                <p>
-                    from $1299
-                </p>
-                <a href="">View Details</a>
+            <div class="card-div">
+                <div class="card">
+                    <img src="media/paris.jpg" height="280vh">
+                    <h2>
+                        New York, USA
+                    <h2> <br>
+                    <p>
+                        from $999
+                    </p>
+                    <a href="">View Details</a>
+                </div>
+                <div class="card">
+                    <img src="media/paris.jpg" height="280vh">
+                    <h2>
+                        Paris, France
+                    <h2> <br>
+                    <p>
+                        from $1299
+                    </p>
+                    <a href="">View Details</a>
+                </div>
+                <div class="card">
+                    <img src="media/paris.jpg" height="280vh">
+                    <h2>
+                        Tokyo, Japan
+                    <h2> <br>
+                    <p>
+                        from $899
+                    </p>
+                    <a href="">View Details</a> 
+                </div>
             </div>
-            <div>
-                <img src="media/vidafa3.jpg" height="200vh">
-                <h3>
-                    Paris, France
-                <h3>
+        </div>
+    </section>
+    <!-- the special offer lies in this section -->
+    <section class="spe-container">
+        <section class="special">
+            <h1>
+                Special Offers
+            </h1>
+            <div class="summer">
+                <h2>
+                    Summer Sale: 30% Off!
+                </h2>
                 <p>
-                    from $899
-                </p>
-                <a href="">View Details</a>
-            </div>
-            <div>
-                <img src="media/vidafa3.jpg" height="200vh">
-                <h3>
-                    Paris, France
-                <h3>
+                    Book before August 31st and save on selected destinations.
                 <p>
-                    from $1099
-                </p>
-                <a href="">View Details</a>
+                <a class="summerbtn" class="summerlink" href="">Grab the Deal</a>
             </div>
         </section>
     </section>
-    <section>
-        <h2>
-            Special Offers
-        </h2>
-        <div>
-            <h2>
-                Summer Sale: 30% Off!
-            </h2>
-            <h4>
-                Book before August 31st and save on selected destinations.
-            </h4>
-            <button type="button">Grab the Deal</button>
-        </div>
-    </section>
     <!-- this is the rating section -->
-    <section>
-        <h1>
+    <section class="rating">
+        <h1 class="rated">
             What Our Travelers Say 
         </h1>
-        <div>
-            <div>
+        <div class="rate">
+            <div class="rates">
                 <p>
-                    "Amazing Experience! The tour guides were knowledgeable and friendly"
-                </p>
-                <h4>
+                    <i>
+                        "Amazing Experience! The tour guides were knowledgeable and friendly."
+                    </i>
+                <p> <br>
+                <h3>
                     ~ Sylvester P.
-                </h4>
-                <P>
+                </h3> <br>
+                <P class="star">
                     ★★★★★
                 </P>
             </div>
-            <div>
+            <div class="rates">
                 <p>
-                    "Amazing Experience! The tour guides were knowledgeable and friendly"
-                </p>
-                <h4>
+                    <i>
+                        "Best vacation ever, will definitely book again."
+                    </i>
+                </p> <br>
+                <h3>
                     ~ Phate S.
-                </h4>
-                <P>
+                </h3> <br>
+                <P class="star">
                     ★★★★☆
                 </P>
             </div>
         </div>
     </section>
-    <footer>
-        <section>
+    <!-- this is the footers -->
+    <footer class="footer">
+        <section class="foot">
             <div>
                 <h2>
                     Vidafa
-                </h2>
+                </h2> <br>
+                <div class="bor"></div> <br> <br>
                 <p>
                     Making travel dreams come true since 2010.
-                </p>
-            </div>
-            <div>
+                </p>  <br>
+            </div> <br>
+            <div class="cntlnk">
                 <h2>
                     Quick Links
-                </h2>
-                <li><a href="home">Home</a></li>
-                <li><a href="destinations">Destinations</a></li>
-                <li><a href="booking">Book Now</a></li>
-            </div>
+                </h2> <br>
+                <div class="bor"></div> <br> <br>
+                <li><a href="#homepage">Home</a></li> <br>
+                <li><a href="#destination">Destinations</a></li> <br>
+                <li><a href="#booking">Book Now</a></li> <br>
+            </div> <br>
             <div>
                 <h2>
                     Contact Us
-                </h2>
-                <img src="media/call.png" height="20vh"> +1 (555) 123-4567
-                <img src="media/Icon-Mail.png" height="20vh"> contact@vidafaconcept.com
-            </div>
+                </h2> <br>
+                <div class="bor"></div> <br> <br>
+                <img src="media/call.png" height="20vh"> +1 (555) 123-4567 <br> <br>
+                <img class="cntimg" src="media/Icon-Mail.png" height="20vh"> contact@vidafaconcept.com
+            </div> <br>
         </section>
-        <div>
+        <div class="sslink">
             <a href="http://x.com/vidafaconcept"><img src="media/Frame-twittter.png" alt="x"></a>
             <a href="http://lnkedin.com/vidafa"><img src="media/Icon - Linkedin.png" alt="linkedin"></a>
             <a href="http://github.com/phateylvester"><img src="media/Icon -GitHub.png" alt="github"></a>
         </div>
         <hr>
-        <p>
+        <p class="footright">
             &copy; 2026 Vidafa's Concept. All rights reserved.
         </p>
     </footer>
